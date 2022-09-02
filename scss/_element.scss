@@ -37,11 +37,22 @@ a:hover,a:visited,a:link {
 
 }
 
-.barra-iconos {
+@mixin iconos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 0;
+
+  }
+
+.barra-iconos {
+    @include iconos;
+}
+
+.barra-iconos-contacto{
+    @include iconos;
+
 }
 
 .icon {
@@ -118,6 +129,7 @@ a:hover,a:visited,a:link {
 }
 
 .card {
+    background-color: $grey2;
     margin: 30px;
 }
 
