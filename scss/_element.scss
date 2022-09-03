@@ -13,6 +13,10 @@ a:hover,a:visited,a:link {
     
   }
 
+.titulos{
+    font-size: 20px;
+}
+
 .Indices_header {
     display: flex;
     /*justify-content: space-evenly;*/
@@ -65,15 +69,26 @@ a:hover,a:visited,a:link {
 
 .parrafo_footer {
     margin: 20px;
-    padding: 10px;
-    animation-name: aparecer;     
+    padding: 10px;     
 }
+
 
 .composicion {
     background-color: $oscuro ;
     font-family: 'Oswald', sans-serif;
     height: 100vh ;
-    font-size: 20px;
+
+}
+
+@media (min-width: 700px) {
+    .composicion {
+        background-color: $oscuro ;
+        font-family: 'Oswald', sans-serif;
+        height: 100vh ;
+        height: 600px;
+        font-size: 20px;
+
+        }
 }
 
 .frame {
